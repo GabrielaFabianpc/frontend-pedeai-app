@@ -162,11 +162,6 @@ export const HomeUser = () => {
     
   
     const { data: restaurante } = useApi<IHomeRestaurant>(`http://localhost:3333/public/restaurants/${params.restaurantId}`)
-//   const { data: products } = useApi<IProduct>(`http://localhost:3333/restaurant/products/${params.restaurantId}`, {
-//     headers: {
-//       'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXN0YXVyYW50SWQiOjMsImlhdCI6MTc0MTU2Nzk2MSwiZXhwIjoxNzQxNTc1MTYxfQ.XfwBn54mQxjl9NRJEKs2kpbSv-nj6ABsqhvjijdJNp8'
-//     }
-//   })
 
 
     const username = restaurante?.username?.replace('_', ' ')
